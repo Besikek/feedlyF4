@@ -1,0 +1,77 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(218, 224, 230);
+}
+
+h1 {
+    padding: 1rem;
+}
+
+.masthead {
+    background-image: url("/img/bg.jpg");
+    padding-top: 5%;
+    height: 100vh;
+    color: rgb(218, 224, 230);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro {
+    background-color: rgba(129, 43, 43, 0.425);
+    margin-top: 8rem !important;
+}
+
+@media (min-width: 576px) {
+    #intro {
+        margin: auto;
+    }
+}
+
+section {
+    padding: auto;
+}
+
+@media (min-width: 576px) {
+    section {
+        padding: 8rem;
+    }
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    background-color: rgb(173, 43, 43);
+    border-width: 4px;
+}
+
+.filler {
+    display: none;
+    background-image: url("https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg");
+    height: 600px;
+}
+
+@media (min-width: 576px) {
+    .filler {
+        display: flex;
+    }
+}
+
+#logo {
+    width: 250px; height: 200px;
+}
+
+@media (min-width: 576px) {
+    #logo {
+        width: 450px; height: 400px;
+    }
+}
