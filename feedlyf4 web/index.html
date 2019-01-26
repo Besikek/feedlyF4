@@ -11,17 +11,18 @@
      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="style.css">
      <link rel="stylesheet" type="text/css" href="nav.css">
+     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"> 
 
-    <title>FeedlyF4</title>
+    <title>FeedlyF4 | Home</title>
   </head>
   <body>
-    <header class="text-center masthead" id="top">
+    <header class="text-center masthead parallax" id="top">
     <!--NANIGATION BAR START-->
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#about" onclick="closeNav()">About</a>
-          <a href="javascript:void(0)" onclick="closeNav()">Link</a>
+          <a href="#main" onclick="closeNav()">No name but works</a>
           <a href="javascript:void(0)" onclick="closeNav()">Link</a>
           <a href="javascript:void(0)" onclick="closeNav()">Link</a>
         </div>
@@ -39,9 +40,9 @@
       <div class="container-fluid my-auto" id="intro">
         <div class="row">
           <div class="col-lg">
-            <h1>Lorem Ipsum doler</h1>
-            <img class="rounded mx-auto d-block" src="/img/f4logo.png" alt="brand-logo" id="logo">
-            <h2>Lorem Ipsum doler</h2>
+            <h1>FeedlyF4</h1>
+            <img class="mx-auto d-block" src="/img/f4logo.png" alt="brand-logo" id="logo">
+            <a href="#about"><button type="button" class="btn-lg btn-primary">Learn More!</button></a>
           </div>
         </div>
       </div>
@@ -68,10 +69,51 @@
       </div>
     </section>
 
-    <aside class="filler parallax"></aside>
+    <aside class="filler"></aside>
 
-    <main>
-
+    <main class="bg-secondary" id="main">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg">
+            <h1>Like legis ipsum lorem.</h1>
+          </div>
+        </div>
+        <!--CARD DECK START-->
+        <div class="row">
+          <div class="col-lg">
+              <div class="card-deck">
+                  <div class="card text-white bg-dark">
+                    <img class="card-img-top" src="http://www.rawckus.com/wp-content/uploads/2017/04/Synthwave-.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark">
+                    <img class="card-img-top" src="http://www.rawckus.com/wp-content/uploads/2017/04/Synthwave-.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark">
+                    <img class="card-img-top" src="http://www.rawckus.com/wp-content/uploads/2017/04/Synthwave-.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <!--CARD DECK END-->
+      </div>
     </main>
 
 
