@@ -1,3 +1,5 @@
+//Készítette: F4 csoport
+
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     }
