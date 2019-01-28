@@ -20,7 +20,9 @@ h1 {
 }
 
 .masthead {
-    background-image: url("/img/bg.jpg");
+    background-image: url("https://www.lagermania.ph/sites/default/files/sample_img.png");
+    background-color: rgb(29, 29, 29);
+
     padding-top: 5%;
     height: 100vh;
     color: rgb(218, 224, 230);
