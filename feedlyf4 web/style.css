@@ -8,7 +8,7 @@ body {
     color: rgb(218, 224, 230);
 
     /*parallax background*/
-    background-image: url("https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg");
+    background-image: url("http://getwallpapers.com/wallpaper/full/6/f/0/321307.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ h1 {
 }
 
 .masthead {
-    background-image: url("https://www.lagermania.ph/sites/default/files/sample_img.png");
+    background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Blue-Eyes-White-Dragon-HD-Backgrounds-PIC-WPE007676.jpg");
     background-color: rgb(29, 29, 29);
 
     padding-top: 5%;
@@ -29,8 +29,18 @@ h1 {
 }
 
 #intro {
-    background-color: rgba(129, 43, 43, 0.425);
+    background-color: rgba(196, 196, 196, 0.397);
     margin-top: 8rem !important;
+    color: black;
+}
+
+#intro button {
+    margin: 1rem 0px 1rem 0px;
+}
+
+#intro h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
 }
 
 @media (min-width: 576px) {
@@ -39,12 +49,19 @@ h1 {
     }
 }
 
-section {
-    padding: auto;
+@media (min-width: 576px) {
+    #intro h1 {
+        font-size: 6rem;
+    }
+}
+
+.mtext-space {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 @media (min-width: 576px) {
-    section {
+    .mtext-space {
         padding: 8rem;
     }
 }
@@ -70,7 +87,7 @@ hr {
     .filler {
         display: flex;
         background: transparent;
-        height: 400px;
+        height: 500px;
     }
 }
 
@@ -84,14 +101,50 @@ hr {
     }
 }
 
-#intro button {
-    margin: 1rem 0px 1rem 0px;
+#about {
+    background-color: #24252a;
 }
 
-#intro h1 {
-    font-family: 'Russo One', sans-serif;
+#description {
+    font-size: 1.1rem;
 }
 
-#intro {
-    color: black;
+@media (min-width: 576px) {
+    #description {
+        font-size: 1.5rem;
+    }
+}
+
+#main {
+    background-color: #24252a;
+}
+
+#main h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#cards {
+    padding: auto;
+}
+
+@media (min-width: 576px) {
+    #cards {
+        padding-bottom: 4.5rem;
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+    }
+}
+
+footer {
+    padding: 1.5rem;
+}
+
+footer i {
+    font-size: 3rem;
+}
+
+footer a i {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }

@@ -11,7 +11,8 @@
      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="style.css">
      <link rel="stylesheet" type="text/css" href="nav.css">
-     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>FeedlyF4 | Home</title>
   </head>
@@ -19,10 +20,9 @@
     <header class="text-center masthead parallax" id="top">
     <!--NANIGATION BAR START-->
       <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#about" onclick="closeNav()">About</a>
-          <a href="#main" onclick="closeNav()">No name but works</a>
+          <a href="#main" onclick="closeNav()">Kedvenceink</a>
           <a href="javascript:void(0)" onclick="closeNav()">Link</a>
           <a href="javascript:void(0)" onclick="closeNav()">Link</a>
         </div>
@@ -31,7 +31,8 @@
       <nav class="navbar-nav navbar-expand navbar-dark bg-transparent fixed-top nav-cstm">
         <a class="navbar-brand" href="#top">FeedlyF4</a>
         <div class="ml-auto">
-          <span class="nav-icon" onclick="openNav()"><p>Menu &#9776;</p></span>
+          <span id="openMenu" class="nav-icon" onclick="openNav()"><p>Menu &#9776;</p></span>
+          <span id="closeMenu" class="nav-icon" onclick="closeNav()"><p>Menu &#9776;</p></span>
         </div>
       </nav>
     <!--NANIGATION BAR END-->
@@ -40,7 +41,7 @@
       <div class="container-fluid my-auto" id="intro">
         <div class="row">
           <div class="col-lg">
-            <h1>FeedlyF4</h1>
+            <h1 class="display-1">FeedlyF4</h1>
             <img class="mx-auto d-block" src="/img/f4logo.png" alt="brand-logo" id="logo">
             <a href="#about"><button type="button" class="btn-lg btn-primary">Learn More!</button></a>
           </div>
@@ -48,22 +49,16 @@
       </div>
     <!--INTRO END-->
     </header>
-    <section class="bg-dark text-center" id="about">
+    <aside class="filler"></aside>
+    <section class="text-center mtext-space" id="about">
       <div class="container-fluid mx-auto">
         <div class="row">
           <div class="col-lg">
-            <h1>Lorem Ipsum Dorem.</h1>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6">
-            <h1>Lorem Ipsum Dorem.</h1>
-            <p>Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is </p>
-          </div>
-          <div class="col-lg-6">
-            <h1>Lorem Ipsum Dorem.</h1>
-            <p>Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is </p>
+            <p class="h1">Mivel foglalkozunk?</p>
+            <hr>
+            <p id="description">Weblapunk a különleges lényekkel foglalkozik, 
+              a legaranyosabbtól a legrémisztőbb lényekig adunk betekintést. 
+              Kutatásokat is végzünk a különleges lények létezésére.</p>
           </div>
         </div>
       </div>
@@ -71,54 +66,85 @@
 
     <aside class="filler"></aside>
 
-    <main class="bg-secondary" id="main">
+    <main id="main">
       <div class="container-fluid">
         <div class="row text-center">
           <div class="col-lg">
-            <h1>Like legis ipsum lorem.</h1>
+            <h2 class="h3">Kedvenceink</h2>
           </div>
         </div>
         <!--CARD DECK START-->
         <div class="row">
           <div class="col-lg">
-              <div class="card-deck">
-                  <div class="card text-white bg-dark">
+              <div class="card-deck" id="cards">
+
+                  <div id="unicorn-card" class="card text-white bg-dark">
+                    <img class="card-img-top" src="/img/unicorn.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Egyszarvú</h5>
+                      <p class="card-text">Egyszarvú (lat. Unicornis, gör. monocerosz), 
+                        ló alakú mitikus állat, lófeje, fehér lóteste, őzlába és oroszlánfarka van, 
+                        homloka közepén egyenes, hegyes szarvval.
+                        Hazájának Indiát vagy Afrikát tartják.</p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                    </div>
+                  </div>
+
+                  <div id="phoenix-card" class="card text-white bg-dark">
+                    <img class="card-img-top" src="img/phoenix.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Főnix</h5>
+                      <p class="card-text">A főnix (görög: Φοῖνιξ) mitikus tűzmadár, 
+                        mely eredetileg az egyiptomi mitológia egyik teremtménye volt.
+                        Legendái szerint a főnix 500, 1461 vagy 15 294 évig élt (attól függően, milyen eredetű forrásban olvasunk róla).</p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                    </div>
+                  </div>
+
+                  <div id="dragon-card" class="card text-white bg-dark">
+                    <img class="card-img-top" src="img/dragon.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Kínai sárkány</h5>
+                      <p class="card-text">„Általában, amikor az emberek sárkányt festenek lófejjel és kígyófarokkal ábrázolják. 
+                        Csakhogy van ezeken kívül a „három tagolás” (szan ting 三停) és a „kilenc hasonló” (csiu sze 九似) szabálya is. </p>
+                      <button type="button" class="btn btn-danger">Learn More!</button>
+                    </div>
+                  </div>
+
+                  <div id="sample-card" class="card text-white bg-dark">
                     <img class="card-img-top" src="https://www.lagermania.ph/sites/default/files/sample_img.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">CARD4</p>
                       <button type="button" class="btn btn-danger">Learn More!</button>
-                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
-                  <div class="card text-white bg-dark">
-                    <img class="card-img-top" src="https://www.lagermania.ph/sites/default/files/sample_img.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
-                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                  <div class="card text-white bg-dark">
-                    <img class="card-img-top" src="https://www.lagermania.ph/sites/default/files/sample_img.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
-                      <p class="card-text"><small class="text-danger">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+
                 </div>
           </div>
         </div>
         <!--CARD DECK END-->
       </div>
     </main>
-
-
+    <footer class="text-center bg-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <h3>FeedlyF4 - 2019</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg">
+            <a href="https://github.com/Besikek/feedlyF4"><i class="fab fa-github"></i></a>
+            <a href="mailto:csoport7777@gmail.com?Subject=Hello"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
+    <script src="nav-script.js"></script>
     <!-- jQuery first,then bootsrap bundle JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>

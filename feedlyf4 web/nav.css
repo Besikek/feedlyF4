@@ -65,3 +65,11 @@
 .nav-icon p:hover {
     color: #b42b2b;
 }
+
+#openMenu {
+    display: block;
+}
+
+#closeMenu {
+    display: none;
+}
