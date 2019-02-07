@@ -1,30 +1,44 @@
 //Készítette: F4 csoport
 
-//declaring element variables
+//creating the objects
 let unicornCard = document.querySelector("#unicorn-card");
 let phoenixCard = document.querySelector("#phoenix-card");
 let dragonCard = document.querySelector("#dragon-card");
 let sampleCard = document.querySelector("#sample-card");
 
 
-
-//random num function
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+//The de-facto unbiased shuffle algorithm is the Fisher-Yates (aka Knuth) Shuffle.
+//repository link to the algorithm: https://github.com/Daplie/knuth-shuffle
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
   }
 
 let isVisible = [true, false, true, false];
 
-
-
-
 function changeCard() {
 
+    isVisible = shuffle(isVisible);
+
     //declaring random bool variables
-    let isVisible_unicorn = isVisible[getRandomInt(3)];
-    let isVisible_phoenix = isVisible[getRandomInt(3)];
-    let isVisible_dragon = isVisible[getRandomInt(3)];
-    let isVisible_sample = isVisible[getRandomInt(3)];
+    let isVisible_unicorn = isVisible[0];
+    let isVisible_phoenix = isVisible[1];
+    let isVisible_dragon = isVisible[2];
+    let isVisible_sample = isVisible[3];
 
 
     //decide logic
@@ -62,15 +76,17 @@ function changeCard() {
     }
 
 
-    console.log(isVisible_sample, isVisible_dragon);
-
-
     unicornCard.style.display = isVisible_unicorn;
     phoenixCard.style.display = isVisible_phoenix;
     dragonCard.style.display = isVisible_dragon;
     sampleCard.style.display = isVisible_sample;
 }
 
+//only two elements out of four will be seen
+unicornCard.style.display = "none";
+sampleCard.style.display = "none";
+
+//execute the changeCard function every 10 seconds
 setInterval(function() {
     changeCard();
-}, 20 * 1000); // 20 * 1000 milsec
+}, 10 * 1000); // 20 * 1000 milsec
