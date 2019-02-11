@@ -6,13 +6,6 @@
 
 body {
     color: rgb(218, 224, 230);
-
-    /*parallax background*/
-    background-image: url("http://getwallpapers.com/wallpaper/full/6/f/0/321307.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 h1 {
@@ -44,7 +37,7 @@ h1 {
 }
 
 #logo {
-    width: 90%; height: 55%;
+    width: 300px; height: 250px;
 }
 
 .filler {
@@ -79,7 +72,7 @@ and (orientation : landscape) {
     }
     
     #logo {
-        width: 30%; height: 50%;
+        width: 180px; height: 140px;
     }
 
     #intro button {
@@ -90,13 +83,19 @@ and (orientation : landscape) {
     .mtext-space {
         padding: 2rem;
     }
+
+    #cards {
+        padding-bottom: 4.5rem;
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+    }
 }
 
 /*TABLET*/
 
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (max-device-width : 992px) 
 and (orientation : portrait) {
     .masthead {
         background-image: url("/img/masthead-tablet_port.png");
@@ -108,7 +107,7 @@ and (orientation : portrait) {
     }
 
     #logo {
-        width: 70%; height: 70%;
+        width: 350px; height: 300px;
     }
 
     #cards {
@@ -129,7 +128,7 @@ and (orientation : portrait) {
 
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (max-device-width : 992px) 
 and (orientation : landscape) {
     .masthead {
         background-image: url("/img/masthead-tablet_land.png");
@@ -145,7 +144,7 @@ and (orientation : landscape) {
     }
 
     #logo {
-        width: 45%; height: 55%;
+        width: 350px; height: 300px;
     }
 
     #intro button {
@@ -165,9 +164,18 @@ and (orientation : landscape) {
     }
 }
 
-/*Large screens*/
+/*Desktop screens*/
 @media only screen 
-and (min-device-width : 1200px) {
+and (min-device-width : 992px) {
+    body {
+    /*parallax background*/
+    background-image: url("/img/body_bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
     .mtext-space {
         padding: 8rem;
     }
@@ -179,7 +187,7 @@ and (min-device-width : 1200px) {
     }
 
     #logo {
-        width: 30%; height: 65%;
+        width: 500px; height: 400px;
     }
 
     #cards {
