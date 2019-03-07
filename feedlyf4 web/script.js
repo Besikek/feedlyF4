@@ -4,6 +4,7 @@
 let unicornCard = document.querySelector("#unicorn-card");
 let phoenixCard = document.querySelector("#phoenix-card");
 let dragonCard = document.querySelector("#dragon-card");
+let griffCard = document.querySelector("#griff-card");
 let sampleCard = document.querySelector("#sample-card");
 
 
@@ -28,7 +29,7 @@ function shuffle(array) {
     return array;
   }
 
-let isVisible = [true, false, true, false];
+let isVisible = [true, true, false, false];
 
 function changeCard() {
 
@@ -38,7 +39,7 @@ function changeCard() {
     let isVisible_unicorn = isVisible[0];
     let isVisible_phoenix = isVisible[1];
     let isVisible_dragon = isVisible[2];
-    let isVisible_sample = isVisible[3];
+    let isVisible_griff = isVisible[3];
 
 
     //decide logic
@@ -67,26 +68,25 @@ function changeCard() {
         isVisible_dragon = "none";
     }
 
-    //sample
-    if (isVisible_sample == true) {
-        isVisible_sample = "block";
+    //griff
+    if (isVisible_griff == true) {
+        isVisible_griff = "block";
     }
     else {
-        isVisible_sample = "none";
+        isVisible_griff = "none";
     }
-
 
     unicornCard.style.display = isVisible_unicorn;
     phoenixCard.style.display = isVisible_phoenix;
     dragonCard.style.display = isVisible_dragon;
-    sampleCard.style.display = isVisible_sample;
+    griffCard.style.display = isVisible_griff;
 }
 
 //only two elements out of four will be seen
 unicornCard.style.display = "none";
-sampleCard.style.display = "none";
+griffCard.style.display = "none";
 
 //execute the changeCard function every 10 seconds
 setInterval(function() {
     changeCard();
-}, 10 * 1000); // 20 * 1000 milsec
+}, 10 * 1000); // 10 * 1000 milsec
