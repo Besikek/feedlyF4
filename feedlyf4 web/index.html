@@ -76,7 +76,6 @@
         <div class="row">
           <div class="col-lg">
               <div class="card-deck" id="cards">
-
                   <div id="unicorn-card" class="card text-white bg-dark">
                     <img class="card-img-top" src="/img/unicorn.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -85,9 +84,36 @@
                         ló alakú mitikus állat, lófeje, fehér lóteste, őzlába és oroszlánfarka van, 
                         homloka közepén egyenes, hegyes szarvval.
                         Hazájának Indiát vagy Afrikát tartják.</p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#unicornModal">
+                          Tudj meg többet!
+                        </button>
                     </div>
                   </div>
+                  <!--UNICORN MODAL START-->
+                  <div class="modal fade" id="unicornModal" tabindex="-1" role="dialog" aria-labelledby="unicornModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="unicornModalLongTitle">Az egyszarvú</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="modal-text">Egyszarvú (lat. Unicornis, gör. monocerosz), ló alakú mitikus állat, lófeje, fehér lóteste, őzlába és oroszlánfarka van, homloka közepén egyenes, hegyes szarvval.
+                            Hazájának Indiát vagy Afrikát tartják. Már az ókori íróknál is feltűnt, például Arisztotelész, Plinius és Aelianus műveiben. Egyes utazók, például Katte, Rüppell, Fresnel Müller, akik a Fokföldről és mások, akik Numibia irányából haladtak előre Afrika belsejében, állítólag egyszarvút ábrázoló sziklarajzokat találtak.
+                            Ókori eredetű hiedelmek szerint szarvának pora minden méreg hatását közömbösíti; az állatot csak úgy lehet elfogni, ha egy szűz leányt ültetnek le útjába, az előtt letérdel, és ölébe hajtja a fejét.
+                            Különösen a középkorból maradt fenn sok ábrázolása; kedvelt volt címerállatként is. A szűziességnek vagy Szent Jusztiniának volt a jelképe. Még a 18. században is gyakran megjelent az egyszarvú alakja a patikák ajtaján.
+                            Több középkori uralkodó kincstárának volt megbecsült darabja egy egyszarvú-szarv – ezekről később kiderült, hogy nem a mondabeli állatnak, hanem egy tengeri emlősfajnak, a narválnak az agyara, amit a vikingek adtak el nekik igen magas áron (időnként egy kastély értékének megfelelő összegért). 
+                            Az egyszarvú Skócia nemzeti állata, és a 12. század óta használják heraldikai jelképként.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--UNICORN MODAL END-->
 
                   <div id="phoenix-card" class="card text-white bg-dark">
                     <img class="card-img-top" src="img/phoenix.jpg" alt="Card image cap">
@@ -96,9 +122,38 @@
                       <p class="card-text">A főnix (görög: Φοῖνιξ) mitikus tűzmadár, 
                         mely eredetileg az egyiptomi mitológia egyik teremtménye volt.
                         Legendái szerint a főnix 500, 1461 vagy 15 294 évig élt (attól függően, milyen eredetű forrásban olvasunk róla).</p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#phoenixModal">
+                        Tudj meg többet!
+                      </button>
                     </div>
                   </div>
+
+                  <!--PHOENIX MODAL START-->
+                  <div class="modal fade" id="phoenixModal" tabindex="-1" role="dialog" aria-labelledby="phoenixModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="phoenixModalLongTitle">A kínai sárkány</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="modal-text">A főnix (görög: Φοῖνιξ) mitikus tűzmadár, mely eredetileg az egyiptomi mitológia egyik teremtménye volt.
+                                Legendái szerint a főnix 500, 1461 vagy 15 294 évig élt (attól függően, milyen eredetű forrásban olvasunk róla). 
+                                Legismertebb leírása szerint a főnix gyönyörű vörös-arany tollazatú hím madár, mely élete végén fahéj-ágacskákból fészket épít, meggyújtja, és vele együtt porrá ég. 
+                                A hamvakból ezután egy új, fiatal főnix születik, amely bebalzsamozza az öreg főnix maradványait egy mirhából készült tojásba, és eltemeti Héliopoliszban, a „nap városában”. 
+                                Az egyiptomiak a főnixet (egyiptomi nyelven: benu) gólya- vagy gémszerű madárnak tartották. A Halottak Könyve és más szent óegyiptomi szövegek tanúsága szerint Héliopolisz egyik szent szimbóluma volt, és szoros összefüggésben állt a felkelő nappal és a napistennel, Rével.A főnix a feltámadás és az örök élet jelképeként a korai keresztény irodalom egyik népszerű témájává vált. 
+                                A korai keresztények hittek benne, hogy a madár tényleg létezik.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--PHOENIX MODAL END-->
+                  
 
                   <div id="dragon-card" class="card text-white bg-dark">
                     <img class="card-img-top" src="img/dragon.jpg" alt="Card image cap">
@@ -106,9 +161,43 @@
                       <h5 class="card-title">Kínai sárkány</h5>
                       <p class="card-text">„Általában, amikor az emberek sárkányt festenek lófejjel és kígyófarokkal ábrázolják. 
                         Csakhogy van ezeken kívül a „három tagolás” (szan ting 三停) és a „kilenc hasonló” (csiu sze 九似) szabálya is. </p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#dragonModal">
+                        Tudj meg többet!
+                      </button>
                     </div>
                   </div>
+
+                  <!--DRAGON MODAL START-->
+                  <div class="modal fade" id="dragonModal" tabindex="-1" role="dialog" aria-labelledby="dragonModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="dragonModalLongTitle">A kínai sárkány</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p class="modal-text">A sárkányok évezredek óta a kínai mitológia és folklór legnagyobb jelentőségű természetfeletti lényei. 
+                              Már az i. e. 2. évezredben, az úgynevezett jóslócsontokra karcolt feliratokon is megjelent piktogram formájában. 
+                              Az ábrázolásokon többnyire több másféle állat részeiből alkották meg alakját, amely általában négy lábbal rendelkező, kígyószerű lény. 
+                              Az első Han császártól kezdve mindig a császárt szimbolizálta, párba állítva a főnixszel, amely a császárné mitikus jelképállata volt. Megkülönböztettek égi, földi, földalatti sárkányokat, amelyek különböző színűek lehettek. 
+                              Az égi sárkányok biztosították az esőt, a föld alatt lakók pedig a föld kincseit őrizték. 
+                              A tengereknek, tavaknak és folyóknak külön gazdáik voltak, az úgynevezett sárkánykirályok. 
+                              A kínai mitológiában a sárkányok általában jók, a béke, a jólét és a virágzás szimbólumának tekintették őket. 
+                              Azonban nem csupán a jó szerencse, a termékenység, a gazdagság és az uralkodó szimbólumává vált, hanem mind a mai napig magát Kínát, a kínaiakat és a kínai kultúrát is szimbolizálja. 
+                              A képző-és díszítőművészetek egyik legnépszerűbb motívuma. Számtalan anekdota, mese, elbeszélés örökítette meg, de szerepel a hivatalos történeti művekben és a régi enciklopédiákban is, mint a „pikkelypáncélos” állatok legfontosabbika. Hatással volt azon távol-keleti népek mitológiájára is, amelyekre Kína erős kulturális hatást gyakorolt, így alakjából és legendáiból sokat merített a japán, a koreai és a vietnámi mitológia sárkánya is. 
+                              A sárkány a kínai zodiákus 5. állata.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--DRAGON MODAL END-->
+
+
 
                   <div id="griff-card" class="card text-white bg-dark">
                     <img class="card-img-top" src="https://w0ngsephj0.files.wordpress.com/2013/11/griffin01.png" alt="Card image cap">
@@ -116,10 +205,46 @@
                       <h5 class="card-title">Griff</h5>
                       <p class="card-text">A griff vagy más néven griffmadár – görög: γρύφων, grüphón vagy γρύπων, grüpón, korai formája γρύψ, grüpsz; latin: gryphus; török és perzsa szimurg – mesebeli állat. 
                         Teste az oroszlánéhoz, feje és szárnyai a saséhoz hasonlók.</p>
-                      <button type="button" class="btn btn-danger">Learn More!</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#griffModal">
+                        Tudj meg többet!
+                      </button>
                     </div>
                   </div>
-                </div>
+
+                  <!--GRIFF MODAL START-->
+                  <div class="modal fade" id="griffModal" tabindex="-1" role="dialog" aria-labelledby="griffModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="griffModalLongTitle">A griff</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="modal-text">A griff vagy más néven griffmadár – görög: γρύφων, grüphón vagy γρύπων, grüpón, korai formája γρύψ, grüpsz; latin: gryphus; török és perzsa szimurg – mesebeli állat. 
+                            Teste az oroszlánéhoz, feje és szárnyai a saséhoz hasonlók. 
+                            Ahogy hagyományosan az oroszlánt tekintették az állatok, a sast pedig a madarak királyának, úgy a griffet is különösen hatalmas, fenséges állatnak, minden teremtmény urának tartották. 
+                            Neve görögül csőrt, kampós orrot jelent. A griff hatalmas kincs, a gazdagság őrzőjeként is ismert volt. Adrienne Mayor, 
+                            ókorral foglalkozó néprajztudós szerint a griff alakját a Protoceratops ásatag maradványairól – az Altaj hegység aranybányáiból kerültek elő a mai Kazahsztán területén – mintázták.
+                            Az ókorban a griff az isteni hatalmat jelképezte, és egyben az istenvilág védelmezőjének tekintették. 
+                            Néhányan úgy gondolják, a griff kapcsolatba hozható a kerubokkal is.
+                            Az egyik legnépszerűbb mesebeli lény, ábrázolásaival a mai napig találkozhatunk. 
+                            A griff visszaköszön a festményekről, szobrokról, regényekből, és a mesebeli lények közül a legnépszerűbb heraldikai alakká vált a középkorban.
+                            A griff alakja megjelenik magyar népmesékben is. A Fehérlófia-mesék hőse az alvilágból, ahol feladatát – a sárkányok legyőzését és a királylányok kiszabadítását – elvégezte, egy griff hátán utazik a felső világba. 
+                            „Az út során saját combja húsával kénytelen etetni a griffet, hogy annak legyen ereje fölrepülni vele az alvilágból”, írja Jankovics Marcell. </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--GRIFF MODAL END-->
+
+
+
+              </div>
           </div>
         </div>
         <!--CARD DECK END-->

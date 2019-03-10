@@ -83,8 +83,8 @@ function changeCard() {
 }
 
 //only two elements out of four will be seen
-unicornCard.style.display = "none";
 griffCard.style.display = "none";
+dragonCard.style.display = "none";
 
 //execute the changeCard function every 10 seconds
 setInterval(function() {

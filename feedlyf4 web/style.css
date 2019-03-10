@@ -164,9 +164,51 @@ and (orientation : landscape) {
     }
 }
 
+/*Laptop screens*/
+@media only screen 
+and (min-device-width : 992px) 
+and (max-device-width : 1600px)  {
+    body {
+    /*parallax background*/
+    background-image: url("/img/body_bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .mtext-space {
+        padding: 8rem;
+    }
+
+    .filler {
+        display: flex;
+        background: transparent;
+        height: 500px;
+    }
+
+    #logo {
+        width: 400px; height: 300px;
+    }
+
+    #cards {
+        padding-bottom: 4.5rem;
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+    }
+
+    #intro h1 {
+        font-size: 4.5rem;
+    }
+
+    #intro {
+        margin-top: auto !important;
+    }
+}
+
 /*Desktop screens*/
 @media only screen 
-and (min-device-width : 992px) {
+and (min-device-width : 1900px)  {
     body {
     /*parallax background*/
     background-image: url("/img/body_bg.jpg");
@@ -236,4 +278,8 @@ footer i {
 footer a i {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+}
+
+.modal-text {
+    font-size: 18px;
 }
